@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 GREEN='\033[0;32m'
 NC='\033[0m'
 echo -e "Please enter the work notes"
@@ -14,5 +15,13 @@ echo -e "${GREEN}"$(hostname)"$NC"
 echo " "
 uptime
 EOF
+=======
+for i in `cat hosts`
+do
+echo "=========================================="
+echo "Verifying the ping status of "$i""
+echo "=========================================="
+ping $i -c 4 
+>>>>>>> 87801d3 (initial commit)
 done
 
